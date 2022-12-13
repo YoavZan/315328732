@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--  <link rel="stylesheet" href= "SearchPage.css">-->
+    <link rel="stylesheet" href= "../static/WebSytles.css">
+  <meta charset="UTF-8">
+  <title>Title</title>
+    <script src="../static/Myfunc.js"></script>
+</head>
+<body>
+
+<nav class="topnav">
+
+  <nav class="navButton">  <img id="Logo" src="../static/images/Logo.jpg" alt=""> </nav>
+  <nav class = "navButton"> <a class="MenuItem" href="HomePage.html">Home</a> </nav>
+  <nav class = "navButton"> <a class="MenuItem" href="SearchPage.html">Search</a> </nav>
+  <nav class="navButton"> <a class="MenuItem" href="TipsPage.html">Tips</a> </nav>
+  <nav class="navButton"> <a class="MenuItem" href="AboutUsPage.html">About us</a> </nav>
+</nav>
+
+<div class="MainPage">
+     <div class = "coverPhoto"> <img id = "coverDog" src="../static/images/CoverDog.jpg" style="width:100%;">
+     </div>
+         <!--<img id = "coverDog"  src="CoverDog.jpg" style="width:100%;"> -->
+         <div class="searchMenu">
+            <div class = "dropDowmSearchPage">
+                <label class="dropDownLabel">Choose breed:</label>
+               <select name="dog-breeds" id="dog-breeds" class="dropDownButton">
+                   <option value="Choose">Choose</option>
+                  <option value="Akita">Akita</option>
+                  <option value="Australian Shepherd">Australian Shepherd</option>
+                  <option value="Beagle">Beagle</option>
+                  <option value="Border Collie">Border Collie</option>
+                  <option value="Boxer">Boxer</option>
+                  <option value="Corgi">Corgi</option>
+                  <option value="Chihuahua">Chihuahua</option>
+                  <option value="Dalmatian">Dalmatian</option>
+                  <option value="German Shepherd">German Shepherd</option>
+                  <option value="Labrador">Labrador</option>
+                  <option value="Mix">Mix</option>
+                  <option value="Poodle">Poodle</option>
+                  <option value="Pug">Pug</option>
+                  <option value="Siberian Husky">Siberian Husky</option>
+                </select>
+
+               <label class="dropDownLabel">Choose Gender:</label>
+               <select name="dog-genders" class="dropDownButton" id="dog-genders">
+                   <option value="Choose">Choose</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+              </select>
+
+               <label class="dropDownLabel"> choose Age: </label>
+               <select name = "dog-ages" class="dropDownButton" id = "dog-ages">
+                   <option value="Choose">Choose</option>
+                  <option value="Puppy">Puppy</option>
+                  <option value="Young">Young</option>
+                  <option value="Adult">Adult</option>
+              </select>
+
+               <label class="dropDownLabel"> choose Size: </label>
+               <select name = "dog-sizes" class="dropDownButton" id = "dog-sizes">
+                   <option value="Choose">Choose</option>
+                  <option value="Small">Small</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Big">Big</option>
+               </select>
+
+               <label class="dropDownLabel"> choose City: </label>
+               <select name = "dog-cities" class="dropDownButton" id = "dog-cities">
+                  <option value="Choose">Choose</option>
+                   <option value="Tel Aviv">Tel Aviv</option>
+                  <option value="Jerusalem">Jerusalem</option>
+                  <option value="Beer Sheva">Beer Sheva</option>
+                  <option value="Haifa">Haifa</option>
+                  <option value="Rishon Lezion">Rishon Lezion</option>
+                  <option value="Yehud">Yehud</option>
+                  <option value="Ramat Gan">Ramat Gan</option>
+                  <option value="Afula">Afula</option>
+                  <option value="Ashdod">Ashdod</option>
+                  <option value="Eilat">Eilat</option>
+                  <option value="Hod Hasharon">Hod Hasharon</option>
+               </select>
+            </div>
+
+                <div class = "SearchButton">
+                    <input id = "searchBtn" class = "dropDownButton" type="Submit" name = "submit"
+                    value="Start to search!" onclick="getDog()">
+                </div>
+
+         </div>
+
+<!--    from here test-->
+    <div id = "Table">
+<!--        <table class = "ResultTable">-->
+<!--            <tr id = "FirstRow">-->
+<!--                <th> Name </th>-->
+<!--                <th> Breed </th>-->
+<!--                <th> Gender </th>-->
+<!--                <th> Age </th>-->
+<!--                <th> Size </th>-->
+<!--                <th> City </th>-->
+<!--                <th> Picture </th>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Jina</td>-->
+<!--                <td>Labrador</td>-->
+<!--                <td>Female</td>-->
+<!--                <td>Puppy</td>-->
+<!--                <td>Small</td>-->
+<!--                <td>Beer Sheva</td>-->
+<!--                <td><img id = "labrador" src="static/images/labrador.jpg" style="width:100px"></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td> Chili</td>-->
+<!--                <td> Poodle</td>-->
+<!--                <td> Male</td>-->
+<!--                <td> Young</td>-->
+<!--                <td> Small</td>-->
+<!--                <td> Tel Aviv</td>-->
+<!--                <td><img id = "poodle" src="static/images/Poodle.jpg" style="width:100px"></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td> Roki</td>-->
+<!--                <td> Mix</td>-->
+<!--                <td> Male</td>-->
+<!--                <td> Adult</td>-->
+<!--                <td> Medium</td>-->
+<!--                <td> Yehud</td>-->
+<!--                <td><img id = "mix" src="static/images/Mix.jpg" style="width:100px"></td>-->
+<!--            </tr>-->
+
+<!--
+        </table>
+-->
+
+    </div>
+
+    <div id = "DetailsOfDog">
+        <div class = "upperDetails">
+            <h3> Meet: Jina</h3>
+
+            <p> About me: Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aut autem beatae culpa dolorem est explicabo harum, id illo ipsam laborum magni natus nesciunt non odio, pariatur porro quis quisquam quos rem repellat rerum saepe sunt tempora! Aliquam deleniti, dignissimos eos harum hic id maiores maxime mollitia numquam officiis quasi quia quis quisquam soluta tempore temporibus vitae! Est, nemo.</p>
+            <p> Association's name: Let the animals to live</p>
+            <p> Association's contact: Lorem ipsume: 054-3541234</p>
+            <hr>
+
+        </div>
+        <div class = "lowerDetails">
+            <h3 id = "headerLowerNote"> If you like this dog, please leave details that we can stay in touch with you..</h3>
+            <form action="FormDetails" method="GET">
+                <input class= "DetailBox" id= "firstNameBox" type="text" name="firstName" placeholder="First name...">
+                <input class= "DetailBox" id= "lastNameBox" type="text" name="lastName" placeholder="Last name...">
+                <input class= "DetailBox" id= "emailBox" type="email" name="email"   placeholder="Email...">
+                <input class= "DetailBox" id= "phoneNumberBox" type="text" name="phoneNumber"   placeholder="Phone number...">
+
+
+                <input id="SendButton" type="button" name="" value="Send" onclick="SubmitForm()">
+                <!-- <input id="SendButton" type="button" name="" value="Send"> -->
+                <input id= "BackButton" type="button" name="" value="Back" onclick="backPage()">
+            </form>
+
+
+        </div>
+
+    </div>
+
+    <div class="popup" id="popup">
+        <h2> Thank you!</h2>
+        <p> Your details has been successfully submitted</p>
+        <button type="button" onclick="closepop()"> Ok</button>
+    </div>
+</div>
+</body>
+</html>
