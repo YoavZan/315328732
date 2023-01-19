@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--  <link rel="stylesheet" href= "SearchPage.css">-->
+
     <link rel="stylesheet" href= "../static/WebSytles.css">
   <meta charset="UTF-8">
   <title>Title</title>
@@ -12,10 +12,10 @@
 <nav class="topnav">
 
   <nav class="navButton">  <img id="Logo" src="../static/images/Logo.jpg" alt=""> </nav>
-  <nav class = "navButton"> <a class="MenuItem" href="HomePage.html">Home</a> </nav>
-  <nav class = "navButton"> <a class="MenuItem" href="SearchPage.html">Search</a> </nav>
-  <nav class="navButton"> <a class="MenuItem" href="TipsPage.html">Tips</a> </nav>
-  <nav class="navButton"> <a class="MenuItem" href="AboutUsPage.html">About us</a> </nav>
+  <nav class = "navButton"> <a class="MenuItem" href="/">Home</a> </nav>
+  <nav class = "navButton"> <a class="MenuItem" href="SearchPage">Search</a> </nav>
+  <nav class="navButton"> <a class="MenuItem" href="TipsPage">Tips</a> </nav>
+  <nav class="navButton"> <a class="MenuItem" href="AboutUsPage">About us</a> </nav>
 </nav>
 
 <div class="MainPage">
@@ -90,65 +90,24 @@
 
          </div>
 
-<!--    from here test-->
-    <div id = "Table">
-<!--        <table class = "ResultTable">-->
-<!--            <tr id = "FirstRow">-->
-<!--                <th> Name </th>-->
-<!--                <th> Breed </th>-->
-<!--                <th> Gender </th>-->
-<!--                <th> Age </th>-->
-<!--                <th> Size </th>-->
-<!--                <th> City </th>-->
-<!--                <th> Picture </th>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>Jina</td>-->
-<!--                <td>Labrador</td>-->
-<!--                <td>Female</td>-->
-<!--                <td>Puppy</td>-->
-<!--                <td>Small</td>-->
-<!--                <td>Beer Sheva</td>-->
-<!--                <td><img id = "labrador" src="static/images/labrador.jpg" style="width:100px"></td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td> Chili</td>-->
-<!--                <td> Poodle</td>-->
-<!--                <td> Male</td>-->
-<!--                <td> Young</td>-->
-<!--                <td> Small</td>-->
-<!--                <td> Tel Aviv</td>-->
-<!--                <td><img id = "poodle" src="static/images/Poodle.jpg" style="width:100px"></td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td> Roki</td>-->
-<!--                <td> Mix</td>-->
-<!--                <td> Male</td>-->
-<!--                <td> Adult</td>-->
-<!--                <td> Medium</td>-->
-<!--                <td> Yehud</td>-->
-<!--                <td><img id = "mix" src="static/images/Mix.jpg" style="width:100px"></td>-->
-<!--            </tr>-->
 
-<!--
-        </table>
--->
+    <div id = "Table">
+
 
     </div>
 
     <div id = "DetailsOfDog">
         <div class = "upperDetails">
-            <h3> Meet: Jina</h3>
-
-            <p> About me: Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aut autem beatae culpa dolorem est explicabo harum, id illo ipsam laborum magni natus nesciunt non odio, pariatur porro quis quisquam quos rem repellat rerum saepe sunt tempora! Aliquam deleniti, dignissimos eos harum hic id maiores maxime mollitia numquam officiis quasi quia quis quisquam soluta tempore temporibus vitae! Est, nemo.</p>
+            <h3 id="DogName"></h3>
+            <p id="AboutMe"></p>
             <p> Association's name: Let the animals to live</p>
-            <p> Association's contact: Lorem ipsume: 054-3541234</p>
+            <p> Association's contact: 054-3541234</p>
             <hr>
 
         </div>
         <div class = "lowerDetails">
             <h3 id = "headerLowerNote"> If you like this dog, please leave details that we can stay in touch with you..</h3>
-            <form action="FormDetails" method="GET">
+            <form action="/i-want-to-adopt" method="post">
                 <input class= "DetailBox" id= "firstNameBox" type="text" name="firstName" placeholder="First name...">
                 <input class= "DetailBox" id= "lastNameBox" type="text" name="lastName" placeholder="Last name...">
                 <input class= "DetailBox" id= "emailBox" type="email" name="email"   placeholder="Email...">

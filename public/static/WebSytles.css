@@ -1,0 +1,293 @@
+.topnav{
+    background-color: white;
+    font-family: "Times New Roman", serif;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 0.5vw;
+    font-size: 2.5vw;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.MenuItem{
+    padding: 0.5vw;
+    background-color: #4472C4;
+    color: #fff;
+    border: solid ;
+    border-radius: 0.75vw;
+    margin-left: 2vw;
+    text-decoration: none;
+}
+.MenuItem:hover{ background: #FFC000}
+
+.navButton{
+    /*  width: 20%; */
+    display: inline-block;
+}
+
+#Logo{
+    float: left;
+}
+
+
+
+/* Tips Style*/
+
+
+.MainPageTips{
+    background-color: #FFC000;
+}
+
+.HeaderMainPageTips{
+    font-family: "Times New Roman";
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5vw;
+    font-size: 1.75vw;
+}
+
+.Tips{
+    font-family: "Times New Roman";
+    padding: 2.5vw;
+    font-size: 1.75vw;
+    /
+}
+
+/* searchPage style*/
+
+
+.dropDownSearchPage {
+    /*bottom: 0%;*/
+    right: 75%;
+}
+
+.searchMenu{
+    position: absolute;
+    top: 40%;
+    padding-left: 5%;
+    margin-bottom: 10%;
+}
+
+#dog-breeds {
+    display: block;
+}
+
+#dog-genders{
+    display: block;
+}
+
+#dog-ages{
+    display: block;
+}
+
+#dog-sizes{
+    display: block;
+}
+
+#dog-cities{
+    display: block;
+}
+
+.dropDownButton{
+    margin: 0.3vw;
+    border-radius: 0.5vw;
+    width:10vw;
+    height: 3vw;
+}
+
+.dropDownLabel{
+    font-weight: bold;
+    font-size: 2vw;
+    display: block;
+}
+
+.SearchButton{
+    margin-left: 20vw;
+}
+
+#searchBtn{
+    background-color: forestgreen;
+    height: 4vw;
+    width: 11vw;
+    font-size: 1.25vw;
+    font-weight: bold;
+}
+#searchBtn:hover {background-color: #3e8e41}
+
+#searchBtn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 1vw forestgreen;
+    transform: scale(140%, 120%);
+
+}
+/* Result table*/
+
+
+#Table{
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#Table th , #Table td{
+    border: 0.05vw solid #ddd;
+    padding: 0.4vw;
+}
+#Table tr:nth-child(even){background-color: #f2f2f2;}
+#Table tr:nth-child(odd){background-color: lightskyblue;}
+
+#Table  tr:hover {background-color: rosybrown;}
+
+#Table th{
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+    text-align: left;
+    background-color: #4472C4;
+    color: white;
+
+}
+.ResultTable {
+    width: 100%;
+}
+
+#DetailsOfDog{
+    padding: 1Vw;
+    border: 0.1vw black solid;
+    width: 60%;
+    height: 30vw;
+    position: fixed;
+    left: 20%;
+    top: 10vw;
+    background-color: azure;
+    margin: auto;
+    display: none;
+}
+
+
+#SendButton {
+    position: absolute;
+    bottom: 0.5vw;
+    right: 5vw;
+    background-color: green;
+    color: black;
+    font-weight: bold;
+    width: 15%;
+    height: 7%;
+    border-radius: 0.25vw;
+    border-color: green;
+}
+
+
+#BackButton {
+    position: absolute;
+    bottom: 0.5vw;
+    left: 5vw;
+    background-color: orangered;
+    color: black;
+    font-weight: bold;
+    width: 15%;
+    height: 7%;
+    border-radius: 0.25vw;
+    border-color: orangered;
+}
+
+.DetailBox{
+    border-radius: 0.25vw;
+    margin-left: 0.5vw;
+
+}
+#headerLowerNote{
+    text-align: center;
+}
+
+/* HomePage style */
+
+.MainPageHomePage {
+    background-image: url("images/CoverDog.jpg");
+    background-size: 100%;
+    height: 40vw;
+    padding: 0.5vw;
+
+}
+.MainPageHomePage h2 {
+    font-size: 5vw;
+}
+
+/* AboutUs style */
+
+
+.ContainerAboutUs{
+    width:45%;
+    position: absolute;
+    top: 35%;
+}
+
+.AboutUsText{
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin: 5%;
+    padding: 1%;
+    font-family: "Times New Roman";
+    font-size: 20px;
+
+    /*padding-left: 5%;*/
+    /*margin-bottom: 10%;*/
+}
+
+.DogImg{
+    width: 20vw;
+}
+
+#popup{
+    padding: 1%;
+    border: 0.1vw black solid;
+    width: 25%;
+    height: 25%;
+    position: fixed;
+    left: 30%;
+    top: 10vw;
+    background-color: palegreen;
+    margin: auto;
+    display: none;
+    text-align: center;
+    border-radius: 0.25vw;
+}
+
+@media only screen and (max-width: 1050px) {
+    #Logo{
+        /*float:none;*/
+
+    }
+    .topnav{
+        display: inline-block;
+        padding-bottom: 2vw;
+    }
+    .navButton{
+        display: block;
+        width:100%;
+        text-align: center;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        position: static;
+    }
+
+    .ContainerAboutUs{
+        width:100%;
+        position: static;
+
+    }
+
+    #DetailsOfDog{
+        overflow-y: scroll;
+    }
+
+    #BackButton, #SendButton{
+    height: auto;
+    width: auto;
+    position: static;
+        bottom:auto;
+     }
+}
